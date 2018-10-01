@@ -21,7 +21,7 @@ if command == "add"
 elsif command == "list"
   TodoItems.new.list
 elsif command == "complete"
-
+  TodoItem.new(id: text)
 end
 # =============================================
 # todo add Drink coffee
