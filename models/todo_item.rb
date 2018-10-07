@@ -10,13 +10,13 @@ class TodoItem
 
   def save
     DBInit.conn.exec(
-      "INSERT INTO todo_items (text) VALUES ('#{text}')"
+      "INSERT INTO todo_item (text) VALUES ('#{text}')"
     )
   end
 
   def destroy
     DBInit.conn.exec(
-      "DELETE FROM todo_items WHERE id = '#{id}'"
+      "DELETE FROM todo_item WHERE id = '#{id}'"
     )
   end
 end

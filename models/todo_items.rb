@@ -5,7 +5,7 @@ class TodoItems
     @items ||= []
 
     todo_items = DBInit.conn.exec(
-       "SELECT * FROM todo_items;"
+       "SELECT * FROM todo_item;"
      )
      todo_items.to_a.each do |item|
        @items << (TodoItem.new(text: item["text"]))
