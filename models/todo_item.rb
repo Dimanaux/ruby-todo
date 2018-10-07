@@ -1,6 +1,7 @@
 class TodoItem
   attr_reader :text
   attr_reader :id
+  attr_reader :id, :text
 
   def initialize(params)
     @id = params[:id]
