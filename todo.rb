@@ -16,7 +16,7 @@ text = ARGV[1..-1].join(" ")
 
 # =============================================
 if command == "add"
-  todo_item = TodoItem.new({text: text}).save
+  todo_item = TodoItem.new(text: text).save
   TodoItems.new.add(todo_item)
 elsif command == "list"
   TodoItems.new.list
