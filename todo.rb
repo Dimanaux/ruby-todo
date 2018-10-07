@@ -5,7 +5,7 @@ require 'bundler'
 
 require './models/todo_item.rb'
 require './models/todo_items.rb'
-require './initializers/pg.rb'
+require './initializers/pg_connect.rb'
 
 Bundler.require(:default)
 
@@ -21,7 +21,7 @@ if command == "add"
 elsif command == "list"
   TodoItems.new.list
 elsif command == "complete"
-  TodoItem.new(id: text).delete
+  TodoItem.new(id: text).destroy
 end
 # =============================================
 # todo add Drink coffee
