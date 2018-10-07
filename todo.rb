@@ -24,7 +24,4 @@ elsif command == "complete"
   TodoItem.new(id: text).destroy
 end
 # =============================================
-# todo add Drink coffee
-# todo list
-# todo complete 5
 
